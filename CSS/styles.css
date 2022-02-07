@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 @import "variables.css";
 /* components*/
 @import "components/status-bar.css";
-
+@import "components/nav_bar.css";
+@import "components/header.css";
+@import "components/user-component.css";
 /*screen*/
 @import "screen/login.css";
+@import "screen/friends.css";
 body {
+  color: #2e363e;
   font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Open Sans", sans-serif;
 }
