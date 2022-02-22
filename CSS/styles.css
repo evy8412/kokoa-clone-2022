@@ -6,11 +6,25 @@
 @import "components/nav_bar.css";
 @import "components/header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+@import "components/no-landscape.css";
+
 /*screen*/
 @import "screen/login.css";
 @import "screen/friends.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/settings.css";
+@import "screen/chat.css";
 body {
   color: #2e363e;
   font-family: "Nanum Gothic Coding", monospace;
   font-family: "Open Sans", sans-serif;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
