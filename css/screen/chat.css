@@ -1,6 +1,13 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  /* background-color: #abc1d1; */
+  background: linear-gradient(
+    to bottom,
+    rgb(199, 235, 241) 30%,
+    rgb(253, 215, 250)
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 180vh;
 }
 
 #chat-screen .alt-header {
@@ -13,7 +20,7 @@
 
 @keyframes fadeIn {
   from {
-    transform: translateY(30px);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -21,17 +28,28 @@
     opacity: 1;
   }
 }
+
 .main-chat {
   margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
+}
+
+.chat__timestamp {
+  animation: fadeIn 0.4s linear;
+}
+
+.message-row__content {
+  opacity: 0;
+  animation: fadeIn 0.4s linear forwards;
+  animation-delay: 1s;
+  display: flex;
 }
 
 #chat-screen .status-bar,
 #chat-screen .alt-header {
-  background-color: #abc1d1;
+  background-color: rgb(199, 235, 241);
 }
 #chat-screen .status-bar {
   z-index: 2;
@@ -39,7 +57,7 @@
 
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: #87b9df;
   padding: 15px 15px;
   border-radius: 25px;
   font-size: 14px;
@@ -56,10 +74,11 @@
   height: 50px;
   border-radius: 50%;
   margin-right: 15px;
+  display: flex;
 }
 .message__author {
   margin-bottom: 5px;
-  display: block;
+  display: flex;
 }
 
 .message__bubble {
@@ -72,8 +91,11 @@
 }
 
 .message__info {
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
+  position: relative;
+  top: 40px;
+  left: -15px;
 }
 .message__time,
 .message__author {
@@ -176,4 +198,46 @@
 }
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.message-row img {
+  opacity: 0;
+  animation: fadeIn 0.4s linear forwards;
+  animation-delay: 2s;
+}
+
+.message-row img {
+  opacity: 1;
+  -webkit-animation: rotate-vert-center 0.5s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+  animation-delay: 2s;
+}
+
+.own {
+  opacity: 0;
+  animation: fadeIn 0.4s linear forwards;
+  animation-delay: 3s;
 }
