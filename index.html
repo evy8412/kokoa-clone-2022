@@ -7,20 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcom to Evelyn Talk</title>
   </head>
-  <body>
+  <body class="indexbody">
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcom to Evelyn Talk</h1>
-      <p class="welcome-header__text">
-        If you have a Evelyn Talk account,<br />
-        login with your email or phone number.
-      </p>
     </header>
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or Phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" class="animated-button victoria-one" value="LOGIN" />
-      <a href="#">Find Evelyn Talk Account or Password </a>
-    </form>
+    <div class="loginwindow">
+      <form action="friends.html" method="get" id="login-form">
+        <input
+          name="username"
+          type="text"
+          placeholder="ID"
+          autocomplete="off"
+          required
+        />
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <div class="submitbutton">
+          <input type="submit" value="LOGIN" />
+          <a href="signup.html"><div class="signup">SIGN UP</div></a>
+        </div>
+        <a href="#">Find Evelyn Talk Account or Password </a>
+      </form>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

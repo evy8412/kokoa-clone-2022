@@ -7,14 +7,14 @@
 
 .recommended-friends__title {
   font-size: 14px;
-  color: var(--gray);
+  color: var(--white);
 }
 
 .recommended-friends span {
   margin: 110px 0px;
   display: block;
   text-align: center;
-  color: var(--gray);
+  color: var(--white);
   font-size: 18px;
 }
 .open-chat__header {
@@ -97,7 +97,7 @@
     color: white;
   }
   50% {
-    color: blue;
+    color: var(--pink);
     transform: scale(1.5);
   }
 

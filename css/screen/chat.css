@@ -16,6 +16,7 @@
   box-sizing: border-box;
   top: 10px;
   z-index: 1;
+  color: rgb(17, 17, 16, 0.7);
 }
 
 @keyframes fadeIn {
@@ -67,6 +68,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  color: rgb(17, 17, 16, 0.7);
 }
 
 .message-row img {
@@ -156,11 +158,11 @@
 .reply__column:last-child button {
   position: absolute;
   right: -3px;
-  top: 2px;
+  top: 5px;
 }
 .reply__column:last-child > i {
   right: 40px;
-  top: 8px;
+  top: 10px;
 }
 
 .reply__column button {
@@ -194,7 +196,7 @@
 
 .reply:focus-within input {
   width: 90vw;
-  transform: translateX(-15%) translateY(-80px);
+  transform: translateX(-5%) translateY(-80px);
 }
 .reply:focus-within {
   transform: translateY(80px);

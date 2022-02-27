@@ -1,5 +1,5 @@
 .user-component__subtitle i {
-  color: orange;
+  color: var(--pink);
   margin-left: 10px;
 }
 .more-screen .icon-row {
@@ -25,7 +25,7 @@
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
+  background-color: var(--pink);
   border-radius: 10px;
   display: flex;
   justify-content: center;

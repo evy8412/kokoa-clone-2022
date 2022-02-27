@@ -1,4 +1,4 @@
-#friends-display-link {
+/* #friends-display-link {
   text-align: center;
   display: block;
   background-color: #fafafa;
@@ -10,10 +10,11 @@
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .friends-screen {
   padding: 0px var(--horizontal-space);
+  color: white;
 }
 
 .friends-screen__channel {
@@ -26,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--white);
 }
 
 @keyframes hideSplashScrenn {
@@ -40,7 +41,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--background);
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -51,4 +52,5 @@
   font-size: 132px;
   animation: hideSplashScrenn 0.5s ease-in-out forwards;
   animation-delay: 1s;
+  color: var(--white);
 }

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "test.css";
 /* components*/
 @import "components/status-bar.css";
 @import "components/nav_bar.css";
@@ -20,9 +19,11 @@
 @import "screen/more.css";
 @import "screen/settings.css";
 @import "screen/chat.css";
+@import "screen/signup.css";
 body {
-  color: #2e363e;
   font-family: "Open Sans", sans-serif;
+  background-color: var(--background);
+  color: var(--white);
 }
 
 .main-screen {

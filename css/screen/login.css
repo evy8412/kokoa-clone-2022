@@ -1,33 +1,20 @@
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 600;
-}
-
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 25px;
 }
 
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.7;
-  font-size: 18px;
-  font-weight: 400;
-  height: 100%;
-  line-height: 25px;
-}
-
-#login-form {
+#login-form,
+.signup {
   display: flex;
   flex-direction: column;
-  margin: 0px 30px;
+  margin: 0px 0px;
+  width: 370px;
+  justify-content: center;
 }
 
-#login-form input {
+#login-form input,
+.signup {
+  background-color: transparent;
   border: none;
   padding: 15px 0px;
   font-size: 18px;
@@ -37,21 +24,33 @@
 #login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
+  caret-color: var(--background);
+  color: var(--white);
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--white);
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--pink);
 }
 
-#login-form input[type="submit"] {
-  background-color: var(--yellow);
+#login-form input[type="submit"],
+.signup {
   cursor: pointer;
-  padding: 20px 0px;
+  padding: 15px 0px;
   border-radius: 5px;
+  width: 130px;
+  border: 2px solid var(--pink);
+  text-align: center;
+  color: var(--white);
+}
+
+#login-form input[type="submit"]:hover,
+.signup:hover {
+  background-color: #666565;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #login-form a {
@@ -59,4 +58,29 @@
   text-decoration: none;
   color: inherit;
   font-size: 17px;
+}
+
+.loginwindow {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+}
+
+.indexbody {
+  background: #353535;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.submitbutton {
+  display: flex;
+  justify-content: space-evenly;
 }
