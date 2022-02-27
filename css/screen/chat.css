@@ -14,7 +14,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  top: 10px;
+  top: 0px;
   z-index: 1;
   color: rgb(17, 17, 16, 0.7);
 }
